@@ -10,11 +10,11 @@ import java.util.Base64;
 @Data
 public class Converter {
     String base64;
-    int picNum=3;
+    int picNum=1;
 
 
     public String jpgToBase64() throws IOException {
-        String path="E:\\Java\\pic\\"+picNum+".jpg";
+        String path="E:\\Java\\CloneJavaProject\\GettingInfo\\src\\main\\resources\\static\\pic\\"+picNum+".jpg";
         File f= new File(path);
        // System.out.println(path);
         if(f.exists() && f!=null) {
